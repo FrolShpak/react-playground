@@ -4,7 +4,7 @@ import { TextInput } from 'react-native';
 export default function UselessTextInput() {
   return (
     <TextInput
-      value={value}
+      value="Test"
     />
   );
 }
