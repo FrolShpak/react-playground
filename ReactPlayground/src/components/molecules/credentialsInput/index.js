@@ -5,8 +5,9 @@ import PasswordEntry from '_atoms/passwordEntry';
 import BasicTitle from '_atoms/basicTitle';
 import BasicButton from '_atoms/basicButton';
 
-export default function CredentialsInput() {
-  return (
+export default class CredentialsInput extends Component {
+  render(){
+    return (
       <View>
         <EmailEntry/>
         <PasswordEntry/>
@@ -15,4 +16,5 @@ export default function CredentialsInput() {
         />
       </View>
   );
+  }
 }
