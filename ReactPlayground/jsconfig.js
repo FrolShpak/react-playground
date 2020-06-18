@@ -7,6 +7,7 @@
         "_atoms": ["src/components/atoms/*"],
         "_molecules": ["src/components/molecules/*"],
         "_organisms": ["src/components/organisms/*"],
+        "_templates": ["src/components/templates/*"],
         "_navigations": ["src/navigations/*"],
         "_screens": ["src/screens/*"],
         "_services": ["src/services/*"],

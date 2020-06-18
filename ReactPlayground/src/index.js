@@ -15,7 +15,7 @@ export default function App() {
           {isLoggedIn ? (
             <Stack.Screen name="Home" component={HomeScreen} options={{title: "Home"}}/>
           ) : (
-            <Stack.Screen name="SignIn" component={SingInScreen} options={{title: "SignIn"}}/>
+            <Stack.Screen name="SignIn" component={SingInScreen} options={{title: "Sign In"}}/>
           )}
         </Stack.Navigator>
       </NavigationContainer>
