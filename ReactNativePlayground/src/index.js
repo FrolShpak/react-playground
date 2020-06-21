@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { styles, baseStyles } from './styles';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 //import HomeScreen from '_screens/home';
@@ -13,9 +14,16 @@ export default function App() {
       <NavigationContainer>
         <Stack.Navigator>
           {isLoggedIn ? (
-            <Stack.Screen name="Home" component={HomeScreen} options={{title: "Home"}}/>
+            <Stack.Screen 
+              name = "Home" 
+              component = {HomeScreen} 
+              options = {{title: "Home"}}/>
           ) : (
-            <Stack.Screen name="SignIn" component={SingInScreen} options={{title: "Sign In"}}/>
+            <Stack.Screen 
+              name = "SignIn"
+              style = {baseStyles.screen}
+              component = {SingInScreen} 
+              options = {{title: "Sign In"}}/>
           )}
         </Stack.Navigator>
       </NavigationContainer>
