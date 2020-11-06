@@ -1,10 +1,10 @@
 import React from 'react';
 import 'react-native-gesture-handler';
-import RootNavigation from './screens/RootNavigation';
+import RootNavigator from './screens/RootNavigator';
 
 const App = () => {
   return (
-    <RootNavigation/>
+    <RootNavigator/>
   );
 };
 
