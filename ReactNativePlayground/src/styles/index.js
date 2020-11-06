@@ -9,15 +9,23 @@ export { Typography, Spacing, Colors, Mixins };
 export const baseStyles = StyleSheet.create({
     button: {
         ...Typography.FONT_REGULAR,
-        color: "red",
-        backgroundColor: "red"
+        ...Mixins.margin(10, 10, 10, 10),
+        ...Mixins.padding(10, 10, 10, 10),
+        width: 200,
     },
     screen: {
-        ...Typography.FONT_REGULAR    
+        ...Typography.FONT_REGULAR,   
+        height: '100%',
+        width: '100%',
+        display:"flex",
+        flexDirection: "column",
+        justifyContent: "flex-start",
+        alignItems: "center",
     },
     textInput:{
         ...Mixins.margin(10, 10, 10, 10),
         ...Mixins.padding(10, 10, 10, 10),
+        width: 200,
         borderWidth: 1,
         borderColor: "#000",
         borderRadius: 5

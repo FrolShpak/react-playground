@@ -1,8 +1,10 @@
 import React, {useState} from 'react';
 import { connect } from 'react-redux';
+import { baseStyles } from '../../styles';
 import { View, TextInput, Button } from 'react-native';
 import { signIn } from '../../redux/actions/authActions';
 import EmailTextInput from '../../components/atoms/emailTextInput/EmailTextInput';
+import PasswordTextInput from '../../components/atoms/passwordTextInput/PasswordTextInput';
 
 
 
@@ -15,15 +17,17 @@ const SignInScreen = (props) => {
     })
   };
   return (
-    <View>
+    <View style={{
+      ...baseStyles.screen,
+      justifyContent: "center",
+      }}>
       <EmailTextInput
         onChangeText={email => setEmail(email)}
         defaultValue={email}
         />
-      <TextInput
+      <PasswordTextInput
         onChangeText={password => setPassowrd(password)}
-        defaultValue={password}
-        placeholder="Password"/>
+        defaultValue={password}/>
       <Button title="Sign In" onPress={signInAction} />
     </View>
   );
