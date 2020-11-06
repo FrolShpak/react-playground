@@ -2,8 +2,7 @@ import React, {useState} from 'react';
 import { connect } from 'react-redux';
 import { View, TextInput, Button } from 'react-native';
 import { signIn } from '../../redux/actions/authActions';
-import PropTypes from 'prop-types';
-import { bindActionCreators } from 'redux';
+import EmailTextInput from '../../components/atoms/emailTextInput/EmailTextInput';
 
 
 
@@ -17,10 +16,10 @@ const SignInScreen = (props) => {
   };
   return (
     <View>
-      <TextInput
+      <EmailTextInput
         onChangeText={email => setEmail(email)}
         defaultValue={email}
-        placeholder="Email"/>
+        />
       <TextInput
         onChangeText={password => setPassowrd(password)}
         defaultValue={password}

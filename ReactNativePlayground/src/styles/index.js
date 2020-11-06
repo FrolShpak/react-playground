@@ -16,6 +16,10 @@ export const baseStyles = StyleSheet.create({
         ...Typography.FONT_REGULAR    
     },
     textInput:{
-        ...Mixins.margin(10, 10, 10, 10)
+        ...Mixins.margin(10, 10, 10, 10),
+        ...Mixins.padding(10, 10, 10, 10),
+        borderWidth: 1,
+        borderColor: "#000",
+        borderRadius: 5
     }
 });
