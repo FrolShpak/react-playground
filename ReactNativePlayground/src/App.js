@@ -3,9 +3,7 @@ import 'react-native-gesture-handler';
 import RootNavigator from './screens/RootNavigator';
 
 const App = () => {
-  return (
-    <RootNavigator/>
-  );
+  return <RootNavigator />;
 };
 
 export default App;

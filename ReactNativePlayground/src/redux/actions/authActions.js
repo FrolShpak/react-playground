@@ -5,5 +5,5 @@ export function signInSuccess(userInfo) {
 }
 
 export function signIn(credentials) {
-  return {type: types.SIGN_IN, credentials};
+  return { type: types.SIGN_IN, credentials };
 }
