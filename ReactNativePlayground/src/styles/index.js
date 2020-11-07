@@ -5,13 +5,11 @@ import * as Typography from './typography';
 import * as Mixins from './mixins';
 
 export { Typography, Spacing, Colors, Mixins };
-
 export const baseStyles = StyleSheet.create({
-  button: {
-    ...Typography.FONT_REGULAR,
+  baseButton: {
+    ...Typography.FONT_BOLD,
     ...Mixins.margin(10, 10, 10, 10),
     ...Mixins.padding(10, 10, 10, 10),
-    width: 200,
   },
   screen: {
     ...Typography.FONT_REGULAR,
