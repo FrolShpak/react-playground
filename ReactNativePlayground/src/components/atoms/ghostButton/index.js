@@ -8,9 +8,9 @@ const GhostButton = props => {
     onPress && onPress();
   };
   return (
-    <View style={{ ...ghostButtonStyles.ghostButtonView }}>
+    <View style={{ ...ghostButtonStyles.ghostButtonView, ...props.viewStyle }}>
       <Text
-        style={{ ...ghostButtonStyles.ghostButtonText }}
+        style={{ ...ghostButtonStyles.ghostButtonText, ...props.textStyle }}
         onPress={onPressed}>
         {props.title}
       </Text>

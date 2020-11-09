@@ -8,8 +8,8 @@ export { Typography, Spacing, Colors, Mixins };
 export const baseStyles = StyleSheet.create({
   baseButton: {
     ...Typography.FONT_BOLD,
-    ...Mixins.margin(10, 10, 10, 10),
-    ...Mixins.padding(10, 10, 10, 10),
+    ...Mixins.margin(10),
+    ...Mixins.padding(10),
   },
   screen: {
     ...Typography.FONT_REGULAR,
@@ -21,8 +21,8 @@ export const baseStyles = StyleSheet.create({
     alignItems: 'center',
   },
   textInput: {
-    ...Mixins.margin(10, 10, 10, 10),
-    ...Mixins.padding(10, 10, 10, 10),
+    ...Mixins.margin(10),
+    ...Mixins.padding(10),
     width: 200,
     borderWidth: 1,
     borderColor: '#000',
